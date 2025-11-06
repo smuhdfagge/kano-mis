@@ -7,19 +7,13 @@ class Core {
     public function __construct() {
         $url = $this->getUrl();
 
-            // If no URL is provided, redirect to login
-            if (!$url) {
-                header('Location: ' . URLROOT . '/users/login');
-                exit();
-            }
-
-            // Look in controllers for first value
-            if(isset($url[0]) && file_exists(PROJECTROOT . '/app/controllers/' . ucwords($url[0]). '.php')) {
-                // If exists, set as controller
-                $this->currentController = ucwords($url[0]);
-                // Unset 0 Index
-                unset($url[0]);
-            }
+        // Look in controllers for first value
+        if(isset($url[0]) && file_exists(PROJECTROOT . '/app/controllers/' . ucwords($url[0]). '.php')) {
+            // If exists, set as controller
+            $this->currentController = ucwords($url[0]);
+            // Unset 0 Index
+            unset($url[0]);
+        }
 
         // Require the controller
         require_once PROJECTROOT . '/app/controllers/'. $this->currentController . '.php';
