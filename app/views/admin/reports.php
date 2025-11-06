@@ -21,7 +21,7 @@
         ?>
         <div class="row g-3 mt-2">
             <div class="col-md-3">
-                <div class="card shadow-sm border-primary">
+                <div class="card shadow-sm border-primary h-100">
                     <div class="card-body">
                         <h6 class="text-muted mb-2">Total Beneficiaries</h6>
                         <div class="h2 mb-0 fw-bold text-primary"><?php echo number_format($total); ?></div>
@@ -29,15 +29,15 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card shadow-sm border-success">
+                <div class="card shadow-sm border-success h-100">
                     <div class="card-body">
                         <h6 class="text-muted mb-2">Total Amount</h6>
-                        <div class="h2 mb-0 fw-bold text-success">₦<?php echo number_format($totalAmount, 0); ?></div>
+                        <div class="h3 mb-0 fw-bold text-success">₦<?php echo number_format($totalAmount, 0); ?></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card shadow-sm border-warning">
+                <div class="card shadow-sm border-warning h-100">
                     <div class="card-body">
                         <h6 class="text-muted mb-2">In Progress</h6>
                         <div class="h2 mb-0 fw-bold text-warning"><?php echo number_format($first + $firstSecond); ?></div>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card shadow-sm border-success">
+                <div class="card shadow-sm border-success h-100">
                     <div class="card-body">
                         <h6 class="text-muted mb-2">Completed</h6>
                         <div class="h2 mb-0 fw-bold text-success"><?php echo number_format($all); ?></div>

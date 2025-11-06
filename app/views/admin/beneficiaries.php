@@ -105,7 +105,7 @@
                             <span class="badge bg-secondary"><?php echo $data['totalRecords']; ?> Total</span>
                         </h5>
                         <div class="d-flex gap-2">
-                            <a class="btn btn-outline-secondary btn-sm" href="<?php echo URLROOT; ?>/public/templates/ImportTemplate.csv" download>
+                            <a class="btn btn-outline-secondary btn-sm" href="<?php echo URLROOT; ?>/templates/ImportTemplate.csv" download>
                                 <i class="bi bi-download"></i> Download Template
                             </a>
                             <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importModal">

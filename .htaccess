@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteBase /hhs/
 
-# Redirect all requests to public folder
-RewriteCond %{REQUEST_URI} !^/hhs/public/
-RewriteRule ^(.*)$ public/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

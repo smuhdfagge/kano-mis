@@ -8,6 +8,6 @@ define('DB_NAME', 'u801881133_mis');
 // App Root
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
-define('URLROOT', 'https://mis.sctukano.org/public');
+define('URLROOT', 'https://mis.sctukano.org/');
 // Site Name
 define('SITENAME', 'KANO SCTU MIS');
