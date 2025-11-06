@@ -1,13 +1,13 @@
 <?php
 // Database Configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'hhs');
+define('DB_USER', 'u801881133_mis');
+define('DB_PASS', '6$IZuv=C');
+define('DB_NAME', 'u801881133_mis');
 
 // App Root
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
-define('URLROOT', 'http://localhost/hhs');
+define('URLROOT', 'https://mis.sctukano.org');
 // Site Name
-define('SITENAME', 'KANO MIS');
+define('SITENAME', 'KANO SCTU MIS');
