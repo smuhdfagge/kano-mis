@@ -1,6 +1,9 @@
 RewriteEngine On
+RewriteBase /mis/
 
 DirectoryIndex index.php index.html
+
+# Don't rewrite files or directories that exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.\*)$ index.php?url=$1 [QSA,L]
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
