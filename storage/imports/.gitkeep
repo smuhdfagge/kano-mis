@@ -1,0 +1,6 @@
+# Import Storage Directory
+
+This directory stores uploaded CSV files for beneficiary imports.
+
+**Permissions Required:** 755 or 775
+**Required for:** Import functionality in the admin panel
